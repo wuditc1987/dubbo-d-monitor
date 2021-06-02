@@ -1,9 +1,8 @@
 import com.alibaba.dubbo.common.utils.ConcurrentHashSet;
-import com.ants.monitor.common.tools.JsonUtil;
-import com.ants.monitor.common.tools.TimeUtil;
-import com.ants.monitor.common.tools.Tool;
+import com.edianyun.monitor.common.tools.JsonUtil;
+import com.edianyun.monitor.common.tools.TimeUtil;
+import org.junit.Ignore;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -13,6 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * Created by zxg on 15/11/3.
  */
+@Ignore
 public class DubboTest {
 
     @Test
@@ -54,13 +54,6 @@ public class DubboTest {
         System.out.println(sdf.format(nowData));
     }
 
-    @Test
-    public void testNUllString(){
-        String a = null;
-
-        String b = a+"1221";
-        System.out.println(b);
-    }
     @Test
     public void testNUllMapKey(){
         Map<String,String> map = new ConcurrentHashMap();

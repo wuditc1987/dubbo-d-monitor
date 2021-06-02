@@ -76,7 +76,7 @@
     1）jetty: web/test/java/AntsMonitorServer ->main 方法启动即可
     2）tomcat: 先`mvn clean package -Dmaven.test.skip -U` 打包,一直 yes 而后将war包放在tomcat webapps下,更改 $tomcat_home/webapps/ROOT/WEB-INF/classes/application.properties 中的变量 启动tomcat即可
 
-#### 4.mysql数据库建表sql：根目录下`dubbo_invoker.sql`
+#### 4.mysql数据库建表sql：根目录下`t_dubbo_invoker.sql`
 
 #### 5. 提供者或消费者应用接入监控中心(非此项目，为其他dubbo项目)：
 	1）方式一（zk自动发现dubbo监控中心）:<dubbo:monitor protocol="registry"/>

@@ -10,7 +10,7 @@
 <!-- BEGIN HEAD -->
 <head>
     <meta charset="utf-8"/>
-    <title>ants-monitor - dubbo监控中心</title>
+    <title>dubbo监控中心</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -72,14 +72,7 @@
         <!-- END RESPONSIVE MENU TOGGLER -->
         <!-- BEGIN PAGE ACTIONS -->
         <!-- DOC: Remove "hide" class to enable the page header actions -->
-        <div class="page-actions">
-            <div class="btn-group">
-                <button type="button" class="btn red-haze btn-sm " id="for_fun_btn" >
-                    一键有惊喜
-                </button>
 
-            </div>
-        </div>
         <!-- END PAGE ACTIONS -->
         <!-- BEGIN PAGE TOP -->
         <div class="page-top">
@@ -176,7 +169,7 @@
 <!-- END CONTAINER -->
 <div class="page-footer">
     <div class="page-footer-inner">
-        2015 © 杭州 by 中西.
+        2015-2021 © 易点云
     </div>
     <div class="scroll-to-top" style="">
         <i class="icon-arrow-up"></i>

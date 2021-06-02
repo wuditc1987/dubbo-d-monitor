@@ -20,16 +20,12 @@
 
     <!--TASk 定时任务-->
     <task:annotation-driven/>
-    <context:component-scan base-package="com.ants.monitor.controller.task">
-    </context:component-scan>
+    <context:component-scan base-package="com.edianyun.monitor.controller.task"/>
 
     <!--初始化SpringApplication-->
-    <bean id="springContextsUtil" class="com.ants.monitor.common.tools.SpringContextsUtil" lazy-init="false"></bean>
+    <bean id="springContextsUtil" class="com.edianyun.monitor.common.tools.SpringContextsUtil" lazy-init="false"/>
 
-    <!--暂时注释掉，调试前端-->
     <!-- 当Spring容器启动完成后执行下面的这个Bean -->
-    <bean class="com.ants.monitor.biz.support.processor.RegistryContainerProcessor"/>
-
-
+    <bean class="com.edianyun.monitor.biz.support.processor.RegistryContainerProcessor"/>
 
 </beans>

@@ -1,4 +1,5 @@
-import com.ants.monitor.common.tools.TimeUtil;
+import com.edianyun.monitor.common.tools.TimeUtil;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.text.ParseException;
@@ -10,6 +11,7 @@ import java.util.List;
 /**
  * Created by zxg on 15/11/17.
  */
+@Ignore
 public class TimeTest {
 
     // 获得当前日期与本周一相差的天数

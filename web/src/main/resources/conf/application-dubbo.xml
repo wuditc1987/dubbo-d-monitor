@@ -8,10 +8,10 @@
 
     <!--dubbo配置-->
     <!-- 当前应用信息配置 -->
-    <dubbo:application name="${dubbo.application.name}" organization="Data" owner=""/>
+    <dubbo:application name="${dubbo.application.name}" organization="ecm-group" owner="ecm"/>
 
     <!-- 连接注册中心配置 -->
-    <dubbo:registry protocol="zookeeper" address="${dubbo.registry.address}"/>
+    <dubbo:registry protocol="zookeeper" address="${dubbo.registry.address}" file="${dubbo.registry.file}"/>
 
     <!-- 暴露服务协议配置 -->
     <dubbo:protocol name="dubbo" port="${dubbo.port}"/>
@@ -21,9 +21,8 @@
     <!-- 暴露服务配置,超时时间60s -->
     <dubbo:service interface="com.alibaba.dubbo.monitor.MonitorService" ref="monitorService"  timeout="60000"/>
 
-    <bean id="monitorService" class="com.ants.monitor.biz.dubboService.DubboMonitorService" />
+    <bean id="monitorService" class="com.edianyun.monitor.biz.dubboService.DubboMonitorService" />
 
-    <dubbo:reference id="registryService" interface="com.alibaba.dubbo.registry.RegistryService" />
-
+    <dubbo:reference id="registryService" interface="com.alibaba.dubbo.registry.RegistryService" check="false"/>
 
 </beans>

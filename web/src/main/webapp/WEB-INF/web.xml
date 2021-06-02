@@ -3,12 +3,10 @@
 
 
 
-<context-param>
+    <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:conf/application-context.xml</param-value>
     </context-param>
-
-
 
     <!-- Spring监听器 -->
     <listener>
